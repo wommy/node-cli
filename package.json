@@ -1,0 +1,8 @@
+{
+	"name": "wommy",
+	"version": "1.0.0",
+	"description": "workin",
+	"bin": {
+		"wommy": "index.js"
+	}
+}
