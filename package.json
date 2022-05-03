@@ -2,6 +2,7 @@
 	"name": "wommy",
 	"version": "1.0.0",
 	"description": "workin",
+	"type": "module",
 	"bin": {
 		"wommy": "index.js"
 	}

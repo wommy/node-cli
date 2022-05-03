@@ -1,17 +1,11 @@
 #!/usr/bin/env node
 
-const pkg = require('./package.json')
-const path_i3r0y = './rd/22/03-14--i3r0y.md'
-// import { readFile } from 'fs'
-const readFile = require('fs').readFile
-
-const i3r0y = await readFile(path_i3r0y, 'utf8', (err, data) => {
-	if (err) throw err
-	return data
-})
+import pkg from './package.json' assert { type: 'json' }
+const path_i3r0y = 'https://raw.githubusercontent.com/wommy/rd/master/22/03-14--i3r0y.md'
+const i3r0y = await fetch(path_i3r0y).then( a => a.text() )
 
 console.log(`
-	name: ${pkg.name}
+	name: $
 	version: ${pkg.version}
 	description: ${pkg.description}
 
@@ -31,9 +25,9 @@ console.log(`
 	---
 	- fetch \`~/rd/22/05-may\`
 	  fake fetched it,
-		REVISIT
+	  REVISIT
 	- load contents?
 
-	${i3r0y}
+	${'\n' + i3r0y.trim()}
 	
 `)
