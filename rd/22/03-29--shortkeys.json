@@ -1,0 +1,14 @@
+[
+  {
+    "key": "ctrl+`",
+    "label": "marx",
+    "action": "openbookmark",
+    "blacklist": false,
+    "activeInInputs": true,
+    "bookmark": "BM",
+    "sites": "",
+    "sitesArray": [
+      ""
+    ]
+  }
+]
